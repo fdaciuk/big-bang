@@ -6,8 +6,16 @@
   "keywords": [
     "slushgenerator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZimpFidelidade/big-bang.git"
+  },
   "author": "Zimp",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZimpFidelidade/big-bang/issues"
+  },
+  "homepage": "https://github.com/ZimpFidelidade/big-bang",
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-conflict": "^0.4.0",
