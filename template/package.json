@@ -2,6 +2,15 @@
 	"name": "<%= projectName %>",
 	"version": "0.1.0",
 	"description": "<%= projectDescription %>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/<%= repositoryName %>.git"
+	},
+	"author": "Zimp",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"bugs": {
+		"url": "https://github.com/<%= repositoryName %>/issues"
+	},
 	"scripts": {
 		"start": "node index.js",
 		"test": "gulp test",

@@ -15,10 +15,15 @@ gulp.task('default', done => {
 	},{
 		name: 'projectDescription',
 		message: 'What is the description?'
+	},{
+		name: 'newrelicLicenseKey',
+		message: 'Enter NewRelic License Key:'
+	},{
+		name: 'repositoryName',
+		message: 'Enter repositoryName (user/repository):'
 	}];
 
 	inquirer.prompt(questions, answers => {
-		answers.newrelicLicenseKey = process.env.ZIMP_NEWRELIC || '';
 		var projectDirectory = './' + answers.projectName;
 		gulp.src(__dirname + '/template/**')
 		.pipe(template(answers))
