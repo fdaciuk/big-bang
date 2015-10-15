@@ -4,9 +4,8 @@ let gulp = require('gulp');
 let install = require('gulp-install');
 let conflict = require('gulp-conflict');
 let template = require('gulp-template');
-let rename = require('rename');
 let _ = require('underscore.string');
-inquirer = require('inquirer');
+let inquirer = require('inquirer');
 
 gulp.task('default', done => {
 	var questions = [{
@@ -19,10 +18,11 @@ gulp.task('default', done => {
 
 	inquirer.prompt(questions, answers => {
 		answers.newrelicLicenseKey = process.env.ZIMP_NEWRELIC || '';
-		gulp.src(__dirname + '/templates/**')
+		var projectDirectory = './' + answers.projectName;
+		gulp.src(__dirname + '/template/**')
 		.pipe(template(answers))
-		.pipe(conflict('./'))
-		.pipe(gulp.dest('./'))
+		.pipe(conflict(projectDirectory))
+		.pipe(gulp.dest(projectDirectory))
 		.pipe(install())
 		.on('end', () => done());
 	});
