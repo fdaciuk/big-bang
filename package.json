@@ -1,6 +1,6 @@
 {
   "name": "slush-bigbang",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Starter for new projects",
   "main": "slushfile.js",
   "keywords": [
