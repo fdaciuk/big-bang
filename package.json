@@ -1,6 +1,6 @@
 {
   "name": "slush-bigbang",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Starter for new projects",
   "main": "slushfile.js",
   "keywords": [
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ZimpFidelidade/big-bang.git"
   },
   "author": "Zimp",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ZimpFidelidade/big-bang/issues"
   },
