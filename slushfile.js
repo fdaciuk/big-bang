@@ -18,6 +18,7 @@ gulp.task('default', done => {
 	}];
 
 	inquirer.prompt(questions, answers => {
+		answers.newrelicLicenseKey = process.env.ZIMP_NEWRELIC || '';
 		gulp.src(__dirname + '/templates/**')
 		.pipe(template(answers))
 		.pipe(conflict('./'))
