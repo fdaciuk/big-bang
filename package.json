@@ -1,0 +1,20 @@
+{
+  "name": "slush-bigbang",
+  "version": "0.1.0",
+  "description": "Starter for new projects",
+  "main": "slushfile.js",
+  "keywords": [
+    "slushgenerator"
+  ],
+  "author": "Zimp",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0",
+    "inquirer": "^0.10.1",
+    "underscore.string": "^3.2.2"
+  }
+}
