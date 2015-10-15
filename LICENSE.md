@@ -1,3 +1,3 @@
 # License
 
-See [license here](http://luanmuniz.mit-license.org/).
+See [license here](http://zimp.mit-license.org/).
