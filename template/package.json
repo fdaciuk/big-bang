@@ -1,0 +1,20 @@
+{
+	"name": "<%= projectName %>",
+	"version": "0.1.0",
+	"description": "<%= projectDescription %>",
+	"scripts": {
+		"start": "node index.js",
+		"test": "gulp test",
+		"nodemon": "nodemon --debug index.js",
+		"debug": "nodemon --debug-brk index.js",
+		"update": "gulp update",
+		"fix": "gulp fix",
+		"postinstall": "npm run update"
+	},
+	"devDependencies": {
+		"gulp": "^3.9.0",
+		"gulp-jscs": "^3.0.1",
+		"gulp-jshint": "^1.11.2",
+		"require-dir": "^0.3.0"
+	}
+}
