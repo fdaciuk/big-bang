@@ -2,8 +2,7 @@
 
 module.exports = {
 	js: [
-		'./index.js',
-		'./modules/**/*.js'
+		'./index.js'
 	],
 	testFiles: [
 		'./test/{api,unit}**/*.js'
